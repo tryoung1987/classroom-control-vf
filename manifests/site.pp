@@ -43,4 +43,14 @@ node default {
   # Example:
   #   class { 'my_class': }
   include role::classroom
+  include role::fundamentals
 }
+# Exercise 7.1
+  file { 'motd':
+    ensure  => file,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0664',
+    path    => '/etc/motd',
+    content => "Think before you type\n",
+  }

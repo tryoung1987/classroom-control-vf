@@ -50,7 +50,7 @@ node default {
     ensure  => file,
     owner   => 'root',
     group   => 'root',
-    mode    => '0664',
+    mode    => '0644',
     path    => '/etc/motd',
     content => "Think before you type\n",
   }

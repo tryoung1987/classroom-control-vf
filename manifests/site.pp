@@ -54,3 +54,4 @@ node default {
     path    => '/etc/motd',
     content => "Think before you type\n",
   }
+  }
